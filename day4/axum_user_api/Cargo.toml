@@ -1,0 +1,25 @@
+
+[package]
+name = "axum_user_api"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+# Web framework
+axum = "0.8"
+
+# Async runtime
+tokio = { version = "1", features = ["full"] }
+
+# MongoDB database
+mongodb = "3"
+
+# Serialization / Deserialization
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+
+# Password hashing
+bcrypt = "0.17"
+
+# Serve static files
+tower-http = { version = "0.6", features = ["fs"] }
